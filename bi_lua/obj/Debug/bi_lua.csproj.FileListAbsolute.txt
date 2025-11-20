@@ -1,0 +1,2 @@
+C:\Users\minmi\OneDrive\Tài liệu\mang may tinh\bi_lua\obj\Debug\bi_lua.csproj.AssemblyReference.cache
+C:\Users\minmi\OneDrive\Tài liệu\mang may tinh\bi_lua\obj\Debug\bi_lua.csproj.CoreCompileInputs.cache

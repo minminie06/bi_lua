@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haha!Bạn đã bị lừa!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #d9534f; /* Màu đỏ nổi bật */
+            font-size: 3em;
+            animation: bounce 1s infinite;
+        }
+        /* Hiệu ứng JavaScript sẽ thêm đoạn văn bản này */
+        #thong_diep {
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+    </div>
+
+    <script>
+        // Lấy phần tử HTML có ID là 'container'
+        const container = document.getElementById('container');
+
+        // Tạo một thẻ <h1> mới
+        const messageElement = document.createElement('h1');
+
+        // Đặt nội dung cho thẻ <h1>
+        messageElement.textContent = "hehe bạn đã bị lừa";
+
+        // Thêm thẻ <h1> vào container
+        container.appendChild(messageElement);
+
+        // (Tùy chọn) Thêm thông báo vào console để thêm phần vui vẻ
+        console.log("Tìm kiếm lỗi à? Không có gì đâu, hehe!");
+    </script>
+
+</body>
+</html>

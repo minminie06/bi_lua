@@ -21,21 +21,22 @@
             display: flex;
             flex-direction: column; /* Xếp các phần tử theo chiều dọc */
             align-items: center; /* Căn giữa theo chiều ngang */
-            justify-content: center; /* Căn giữa theo chiều dọc nếu container có chiều cao cố định */
+            justify-content: center;
         }
 
         .main-title {
             color: #d9534f; /* Màu đỏ nổi bật */
             font-size: 5em; /* Phóng to */
-            margin-bottom: 10px; /* Khoảng cách với dòng dưới */
+            font-weight: bold;
+            margin-bottom: 30px; /* <--- Đã TĂNG khoảng cách dưới */
             animation: bounce 1s infinite; /* Hiệu ứng rung lắc */
-            font-weight: bold; /* In đậm */
         }
 
         .small-text {
             color: black; /* Màu đen */
-            font-size: 1em; /* Kích thước nhỏ hơn nhưng vẫn dễ đọc */
-            margin-top: 10px; /* Loại bỏ margin trên */
+            font-size: 1em; /* <--- Đã LÀM NHỎ HƠN (từ 1.5em xuống 1em) */
+            margin-top: 0; 
+            font-style: italic; /* <--- Đã THÊM kiểu chữ nghiêng */
         }
 
         @keyframes bounce {
@@ -65,7 +66,7 @@
         mainMessageElement.textContent = "Chúc mừng bạn đã trúng thưởng!";
         mainMessageElement.classList.add('main-title'); // Áp dụng class CSS
 
-        // 2. Tạo và thiết lập thẻ <p> (dòng chữ đen nhỏ)
+        // 2. Tạo và thiết lập thẻ <p> (dòng chữ đen nhỏ và nghiêng)
         const smallTextElement = document.createElement('p');
         smallTextElement.textContent = "hehe bạn bị lừa rùi:))))";
         smallTextElement.classList.add('small-text'); // Áp dụng class CSS
@@ -80,4 +81,3 @@
 
 </body>
 </html>
-
